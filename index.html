@@ -3,208 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>devplaynew — 지원 / 개인정보처리방침</title>
+  <title>devplaynew — 앱 지원 센터</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 0 auto; padding: 48px 20px 80px; color: #1c1c1e; line-height: 1.8; background: #fff; }
-    h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
-    h2 { font-size: 18px; font-weight: 600; margin-top: 40px; margin-bottom: 8px; }
-    h3 { font-size: 15px; font-weight: 600; margin-top: 24px; margin-bottom: 4px; color: #1c1c1e; }
-    p, li { font-size: 15px; color: #3a3a3c; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 4px; }
-    a { color: #5b4ad6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    hr { border: none; border-top: 1px solid #e5e5ea; margin: 52px 0; }
-    footer { margin-top: 64px; font-size: 13px; color: #8e8e93; }
-
-    .brand { font-size: 13px; color: #8e8e93; margin-bottom: 2px; letter-spacing: 0.02em; text-transform: uppercase; }
-    .subtitle { font-size: 15px; color: #6e6e73; margin-top: 4px; margin-bottom: 0; }
-    .date { font-size: 14px; color: #8e8e93; margin-top: 6px; }
-
-    .contact-btn { display: inline-block; padding: 9px 16px; background: #f4f1ff; border-radius: 10px; color: #5b4ad6; font-weight: 600; font-size: 15px; margin-top: 6px; }
-
-    /* App nav */
-    .app-nav { display: flex; gap: 10px; margin: 36px 0 0; flex-wrap: wrap; }
-    .app-chip { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: 600; text-decoration: none; border: 1.5px solid #e5e5ea; color: #3a3a3c; background: #fafafa; transition: background 0.15s; }
-    .app-chip:hover { background: #f0f0f5; text-decoration: none; }
-    .app-chip .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 0 auto; padding: 48px 20px 80px; color: #1c1c1e; line-height: 1.8; background: #fff; }
+h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+h2 { font-size: 18px; font-weight: 600; margin-top: 40px; margin-bottom: 8px; }
+h3 { font-size: 15px; font-weight: 600; margin-top: 24px; margin-bottom: 4px; }
+p, li { font-size: 15px; color: #3a3a3c; }
+ul { padding-left: 20px; }
+li { margin-bottom: 4px; }
+a { color: #5b4ad6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: none; border-top: 1px solid #e5e5ea; margin: 48px 0; }
+footer { margin-top: 64px; font-size: 13px; color: #8e8e93; }
+.brand { font-size: 13px; color: #8e8e93; margin-bottom: 2px; letter-spacing: 0.02em; text-transform: uppercase; }
+.date { font-size: 14px; color: #8e8e93; margin-top: 6px; }
+.back { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #5b4ad6; margin-bottom: 32px; }
+.contact-btn { display: inline-block; padding: 9px 16px; background: #f4f1ff; border-radius: 10px; color: #5b4ad6; font-weight: 600; font-size: 15px; margin-top: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+th { text-align: left; padding: 8px 10px; background: #f2f2f7; font-weight: 600; color: #3a3a3c; border-bottom: 1px solid #e5e5ea; }
+td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertical-align: top; }
+.notice { background: #fff9e6; border-left: 3px solid #ffcc00; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #3a3a3c; }
+.notice-red { background: #fff2f2; border-left-color: #ff3b30; }
+    .app-list { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+    .app-card { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border: 1.5px solid #e5e5ea; border-radius: 14px; text-decoration: none; color: #1c1c1e; transition: background 0.15s; }
+    .app-card:hover { background: #f5f5f7; text-decoration: none; }
+    .app-card-left { display: flex; align-items: center; gap: 14px; }
+    .app-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
     .dot-byulbam { background: #5b4ad6; }
     .dot-danggil { background: #30d158; }
-
-    /* Section title */
-    .section-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #8e8e93; margin-bottom: 6px; margin-top: 0; }
-
-    /* Table */
-    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
-    th { text-align: left; padding: 8px 10px; background: #f2f2f7; font-weight: 600; color: #3a3a3c; border-bottom: 1px solid #e5e5ea; }
-    td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertical-align: top; }
-
-    /* Notice box */
-    .notice { background: #fff9e6; border-left: 3px solid #ffcc00; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #3a3a3c; }
-    .notice-red { background: #fff2f2; border-left-color: #ff3b30; }
+    .app-name { font-size: 17px; font-weight: 600; }
+    .app-desc { font-size: 13px; color: #8e8e93; margin-top: 2px; }
+    .arrow { color: #c7c7cc; font-size: 18px; }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <p class="brand">devplaynew</p>
-  <h1>지원 센터 &amp; 개인정보처리방침</h1>
-  <p class="subtitle">운영사: devplaynew &nbsp;·&nbsp; 이메일: <a href="mailto:banwith7@gmail.com">banwith7@gmail.com</a></p>
-  <p class="date">최종 시행일: 2026년 5월 18일</p>
+  <h1>앱 지원 센터</h1>
+  <p style="color:#6e6e73; font-size:15px; margin-top:6px;">앱을 선택하면 지원 FAQ와 개인정보처리방침을 확인할 수 있습니다.</p>
+  <p class="date">문의: <a href="mailto:banwith7@gmail.com">banwith7@gmail.com</a></p>
 
-  <div class="app-nav">
-    <a class="app-chip" href="#byulbam"><span class="dot dot-byulbam"></span>별밤라디오</a>
-    <a class="app-chip" href="#danggil"><span class="dot dot-danggil"></span>당길지도</a>
+  <div class="app-list">
+    <a class="app-card" href="./byulbam">
+      <div class="app-card-left">
+        <span class="app-dot dot-byulbam"></span>
+        <div>
+          <div class="app-name">별밤라디오</div>
+          <div class="app-desc">라디오 감성 편지 앱 · iOS</div>
+        </div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+    <a class="app-card" href="./danggil">
+      <div class="app-card-left">
+        <span class="app-dot dot-danggil"></span>
+        <div>
+          <div class="app-name">당길지도</div>
+          <div class="app-desc">당뇨인 외식 메뉴 추천 · iOS</div>
+        </div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
   </div>
 
-  <hr>
-
-  <!-- ===== 별밤라디오 ===== -->
-  <section id="byulbam">
-    <p class="section-eyebrow">App 1</p>
-    <h1>별밤라디오</h1>
-    <p class="date">시행일: 2026년 5월 12일</p>
-
-    <h2>문의 / Contact</h2>
-    <p>앱 사용 중 불편한 점, 버그 제보, 데이터 삭제 요청 등 모든 문의는 아래 이메일로 연락 주세요. 영업일 기준 2–3일 안에 답변드립니다.</p>
-    <p><a class="contact-btn" href="mailto:banwith7@gmail.com?subject=[별밤] 문의">✉︎ banwith7@gmail.com</a></p>
-
-    <h2>자주 묻는 질문</h2>
-
-    <h3>방송은 언제 들을 수 있나요?</h3>
-    <p>매일 한국 시간 기준 오전 8시, 오후 6시, 오후 11시에 새 방송이 송출됩니다. 지나간 방송은 메인 화면의 "최근 방송" 카드나 아카이브에서 다시 들을 수 있습니다.</p>
-
-    <h3>백그라운드에서 방송이 재생되지 않아요</h3>
-    <p>iOS 설정 → 별밤라디오 → "백그라운드 앱 새로 고침"이 켜져 있는지 확인해 주세요. 무음 모드(벨소리 스위치)가 켜져 있어도 미디어 음량 슬라이더로 볼륨을 조절할 수 있습니다.</p>
-
-    <h3>사연(편지)은 어떻게 보내나요?</h3>
-    <p>메인 화면의 "편지 쓰기" 버튼을 눌러 편지를 작성한 뒤 제출하면 됩니다. 편지함은 오전 6시부터 오후 6시까지 열립니다. 닉네임만 입력하면 되고, 개인을 식별할 수 있는 정보는 받지 않습니다.</p>
-
-    <h3>내가 보낸 편지는 어디에서 확인하나요?</h3>
-    <p>상단 프로필 아이콘 → "내 편지함"에서 보낸 편지와 편성 여부를 확인할 수 있습니다.</p>
-
-    <h3>iCloud 로그인이 필요한가요?</h3>
-    <p>네, 별밤라디오는 iCloud(CloudKit)로 편지와 방송 데이터를 동기화합니다. iOS 설정에서 iCloud에 로그인되어 있어야 정상적으로 동작합니다.</p>
-
-    <h3>데이터 삭제를 원합니다</h3>
-    <p>위 이메일로 "데이터 삭제 요청"이라는 제목과 함께 연락 주시면 7일 이내에 처리해 드립니다.</p>
-
-    <h2>개인정보처리방침</h2>
-
-    <h3>1. 수집하는 개인정보</h3>
-    <p>별밤라디오는 별도의 개인정보를 수집하지 않습니다. 앱 사용 시 Apple iCloud 계정을 통해 익명 식별자만 사용되며, 이름·이메일·전화번호 등 개인 식별 정보는 수집되지 않습니다.</p>
-
-    <h3>2. 사용자 작성 콘텐츠</h3>
-    <p>사용자가 작성한 편지는 익명으로 처리되며, 닉네임은 사용자가 직접 설정한 임의의 이름입니다. 편지 내용은 운영자 검수 후 승인된 것만 다른 사용자에게 노출됩니다.</p>
-
-    <h3>3. 제3자 제공</h3>
-    <p>수집된 정보를 제3자에게 판매하거나 제공하지 않습니다.</p>
-
-    <h3>4. 데이터 저장</h3>
-    <p>사용자 데이터는 Apple CloudKit(퍼블릭 데이터베이스)에 저장되며, Apple의 개인정보 보호 정책을 따릅니다.</p>
-
-    <h3>5. 데이터 삭제</h3>
-    <p>앱 내 계정 삭제 기능 또는 운영자 이메일 문의를 통해 데이터를 삭제할 수 있습니다. 요청 후 7일 이내 처리합니다.</p>
-  </section>
-
-  <hr>
-
-  <!-- ===== 당길지도 ===== -->
-  <section id="danggil">
-    <p class="section-eyebrow">App 2</p>
-    <h1>당길지도</h1>
-    <p class="date">시행일: 2026년 5월 18일</p>
-
-    <h2>문의 / Contact</h2>
-    <p>앱 사용 중 불편한 점, 버그 제보, 데이터 삭제 요청 등 모든 문의는 아래 이메일로 연락 주세요. 영업일 기준 2–3일 안에 답변드립니다.</p>
-    <p><a class="contact-btn" href="mailto:banwith7@gmail.com?subject=[당길지도] 문의">✉︎ banwith7@gmail.com</a></p>
-
-    <h2>자주 묻는 질문</h2>
-
-    <h3>앱이 수집하는 건강 데이터가 외부로 전송되나요?</h3>
-    <p>혈당 기록, 식사 로그, 음식 사진은 모두 사용자의 기기 내에만 저장됩니다. 외부 서버로 자동 전송되지 않습니다.</p>
-
-    <h3>위치 정보는 어디에 사용되나요?</h3>
-    <p>주변 식당 검색 시 현재 GPS 좌표가 카카오맵 서비스로 일시 전송됩니다. 당사 서버에는 위치 정보를 저장하지 않습니다.</p>
-
-    <h3>커뮤니티 혈당 반응 공유는 필수인가요?</h3>
-    <p>아니요, 완전히 선택 사항입니다. 공유 버튼을 직접 눌러야만 익명 데이터가 업로드됩니다. 공유하지 않으면 어떤 데이터도 외부로 전송되지 않습니다.</p>
-
-    <h3>인슐린 용량을 자동으로 계산해 주나요?</h3>
-    <p>당길지도는 의료기기가 아닙니다. 인슐린 용량 자동 계산, 처방, 진단 기능은 제공하지 않습니다. 모든 영양 정보는 참고용이며, 치료·투약 결정은 반드시 담당 의료진과 상의하세요.</p>
-
-    <h3>데이터 삭제를 원합니다</h3>
-    <p>앱 내 혈당 기록 및 식사 기록은 기기에서 직접 삭제할 수 있습니다. 커뮤니티에 공유된 익명 데이터는 이메일로 삭제 요청 주시면 7일 이내 처리합니다.</p>
-
-    <h2>개인정보처리방침</h2>
-
-    <div class="notice">
-      당길지도는 의료기기가 아닙니다. 앱 내 모든 정보는 참고용이며, 의료적 처방·진단을 대체하지 않습니다.
-    </div>
-
-    <h3>1. 수집하는 정보와 저장 위치</h3>
-    <table>
-      <thead>
-        <tr><th>정보 항목</th><th>수집 목적</th><th>저장 위치</th><th>외부 전송</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>GPS 위치 좌표</td><td>주변 식당 검색</td><td>기기 내 (임시)</td><td>카카오맵 API (검색 시 일시 전송, 당사 저장 X)</td></tr>
-        <tr><td>혈당 기록</td><td>기록·차트·통계</td><td>기기 로컬 (SwiftData)</td><td>없음 (자동 전송 X)</td></tr>
-        <tr><td>식사 기록 (메뉴명·식당명·시각)</td><td>식사-혈당 연결 분석</td><td>기기 로컬 (SwiftData)</td><td>없음 (자동 전송 X)</td></tr>
-        <tr><td>음식 사진</td><td>식사 기록 첨부</td><td>기기 로컬</td><td>없음</td></tr>
-        <tr><td>익명 혈당 반응 공유 데이터</td><td>커뮤니티 통계 제공</td><td>Supabase (익명)</td><td>사용자가 직접 공유 선택 시에만</td></tr>
-        <tr><td>당뇨 유형·탄수 한도 등 설정</td><td>메뉴 필터링·추천</td><td>기기 로컬 (SwiftData)</td><td>없음</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:13px; color:#8e8e93; margin-top:8px;">이름·이메일·전화번호 등 직접 식별 가능한 개인정보는 수집하지 않습니다.</p>
-
-    <h3>2. 제3자 서비스</h3>
-    <ul>
-      <li><strong>카카오맵 로컬 API</strong>: 주변 식당 검색 시 GPS 좌표를 카카오 서버로 전송합니다. 카카오의 개인정보처리방침이 적용됩니다.</li>
-      <li><strong>Supabase</strong>: 사용자가 커뮤니티 혈당 반응 공유를 선택한 경우에 한해 익명 데이터를 저장합니다. Supabase의 개인정보처리방침이 적용됩니다.</li>
-      <li>그 외 제3자에게 데이터를 판매하거나 제공하지 않습니다.</li>
-    </ul>
-
-    <h3>3. 건강 정보의 특별 보호</h3>
-    <p>혈당 기록은 민감한 건강 정보입니다. 당길지도는 이 데이터를 기기 외부로 자동 전송하지 않으며, 광고·마케팅 목적으로 사용하지 않습니다. HealthKit 연동은 현재 지원하지 않습니다.</p>
-
-    <h3>4. 카메라 및 사진 접근</h3>
-    <p>식사 사진 첨부 기능 사용 시에만 카메라 및 사진 보관함에 접근합니다. 촬영·선택된 사진은 기기 내에만 저장되며 외부로 전송되지 않습니다.</p>
-
-    <h3>5. 위치 정보 접근</h3>
-    <p>앱 사용 중에만 위치에 접근합니다("앱 사용 중 허용"). 주변 식당 검색 시 카카오맵 API에 좌표가 일시 전송되며, 당사 서버에는 저장되지 않습니다.</p>
-
-    <h3>6. 알림</h3>
-    <p>식후 2시간 혈당 기록 알림 등을 위해 알림 권한을 요청합니다. 알림 허용 여부는 iOS 설정에서 언제든지 변경할 수 있습니다.</p>
-
-    <h3>7. 데이터 삭제</h3>
-    <ul>
-      <li><strong>로컬 데이터</strong>: 앱 삭제 시 기기의 모든 기록이 함께 삭제됩니다.</li>
-      <li><strong>커뮤니티 공유 데이터</strong>: 이메일로 삭제 요청 주시면 7일 이내 처리합니다.</li>
-    </ul>
-
-    <h3>8. 의료 면책</h3>
-    <div class="notice notice-red">
-      당길지도는 의료기기법상 의료기기에 해당하지 않습니다. 혈당 예측, 인슐린 용량 계산, 처방 및 진단 기능을 제공하지 않습니다. 앱 내 모든 영양 정보는 식품의약품안전처 데이터 기반 참고용이며 실제 수치와 다를 수 있습니다. 당뇨 관련 치료·투약 결정은 반드시 담당 의료진과 상의하세요.
-    </div>
-
-    <h3>9. 아동 개인정보</h3>
-    <p>당길지도는 만 14세 미만 아동을 대상으로 서비스를 제공하지 않으며, 고의로 아동의 개인정보를 수집하지 않습니다.</p>
-  </section>
-
-  <hr>
-
-  <!-- 공통 Footer -->
-  <h2>공통 — 이용자 권리 및 정책 변경</h2>
-  <p>이용자는 언제든지 자신의 개인정보 열람·수정·삭제를 요청할 수 있습니다. 개인정보 처리에 관한 모든 문의는 <a href="mailto:banwith7@gmail.com">banwith7@gmail.com</a>으로 연락 주세요.</p>
-  <p>본 방침은 법령 또는 서비스 변경에 따라 개정될 수 있습니다. 중요한 변경 사항은 앱 내 공지 또는 본 페이지에 게시합니다. 변경된 방침은 게시 즉시 효력이 발생합니다.</p>
-
-  <footer>
-    © 2026 devplaynew &nbsp;·&nbsp; <a href="mailto:banwith7@gmail.com">banwith7@gmail.com</a>
-    <br>
-    <span style="font-size:12px;">별밤라디오 시행일: 2026-05-12 &nbsp;·&nbsp; 당길지도 시행일: 2026-05-18</span>
-  </footer>
-
+  <footer>© 2026 devplaynew · <a href="mailto:banwith7@gmail.com">banwith7@gmail.com</a></footer>
 </body>
 </html>
