@@ -47,10 +47,7 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
   <h2>FAQ</h2>
 
   <h3>How are today's cards chosen?</h3>
-  <p>MochiNyan reads your surrounding place categories (cafés, stations, convenience stores, restaurants, etc.), the current weather, and time of day to prepare a card pack of 10 phrases that fit the moment. Even at the same location, the next pack can differ when the time or weather changes.</p>
-
-  <h3>I denied location permission. Can I still use the app?</h3>
-  <p>Yes. Without location, you'll get a generic time-of-day card pack instead. You can change permission anytime in iOS Settings → MochiNyan → Location.</p>
+  <p>MochiNyan builds a pack of 10 phrases you haven't seen yet — ordered by difficulty — from the card pack you pick (Daily, Travel, Office, JLPT). Switching packs or viewing more cards brings up new phrases.</p>
 
   <h3>Daily Challenge isn't showing up</h3>
   <p>Daily Challenge unlocks when you've marked <strong>5 or more words as "I know it"</strong> in today's cards. It can be played <strong>once per day</strong> — after you complete it, the entry appears as "Done" until the next day.</p>
@@ -77,34 +74,25 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
   <h3>1. Personal Information We Collect</h3>
   <p>MochiNyan does not collect any personal information. The app uses only an anonymous identifier through your Apple iCloud account. We do not collect names, email addresses, phone numbers, or any other personally identifiable information.</p>
 
-  <h3>2. Location Data Usage</h3>
-  <p>With your consent, MochiNyan detects nearby <strong>place categories</strong> (café, station, convenience store, restaurant, etc.) to recommend context-appropriate cards. We do not store or transmit your precise coordinates, place names, or movement history. You can revoke location permission anytime in iOS Settings.</p>
-
-  <h3>3. Weather Data</h3>
-  <p>Current location-based weather is queried via Apple WeatherKit to inform card recommendations. Weather data is not stored, and your location is handled according to Apple WeatherKit's policies.</p>
-
-  <h3>4. External APIs</h3>
+  <h3>2. External APIs</h3>
   <table>
     <tr><th>Region</th><th>API</th><th>Purpose</th></tr>
-    <tr><td>Korea</td><td>Kakao Local API</td><td>Nearby place category search (coordinates sent one-way, only category names used from the response)</td></tr>
-    <tr><td>Outside Korea</td><td>Apple MapKit</td><td>Nearby place category search (coordinates sent one-way, only category names used from the response)</td></tr>
-    <tr><td>All regions</td><td>Apple WeatherKit</td><td>Current location weather</td></tr>
     <tr><td>All regions</td><td>Apple CloudKit</td><td>Card content and collection progress sync (Public + Private databases)</td></tr>
   </table>
 
-  <h3>5. Third-Party Sharing</h3>
+  <h3>3. Third-Party Sharing</h3>
   <p>We do not sell or share collected information with any third parties.</p>
 
-  <h3>6. Data Storage</h3>
+  <h3>4. Data Storage</h3>
   <p>Your learning records (confused words, learned words, bookmarks) and collection progress are stored in Apple CloudKit's Private Database, governed by Apple's privacy policies. Only you, through your Apple ID, can access this data.</p>
 
-  <h3>7. Notifications</h3>
+  <h3>5. Notifications</h3>
   <p>MochiNyan uses only local notifications (scheduled on-device). Remote push (APNs) is not used. Notifications work only when you've explicitly enabled them and set a time, with a maximum of one notification per day.</p>
 
-  <h3>8. Data Deletion</h3>
+  <h3>6. Data Deletion</h3>
   <p>You can request data deletion via the email above. We process requests within 7 days. Uninstalling the app immediately deletes local data (SwiftData); iCloud data is handled according to Apple ID policies.</p>
 
-  <h3>9. Policy Changes</h3>
+  <h3>7. Policy Changes</h3>
   <p>This policy may be updated. When changes occur, we'll post a notice in the app and on this page.</p>
 
   <footer>© 2026 devplaynew · <a href="mailto:harudrop.help@icloud.com">harudrop.help@icloud.com</a> · <a href="./">App list</a></footer>
