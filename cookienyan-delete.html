@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>냥냥보카 영어 (쿠키냥) — 계정 및 데이터 삭제 요청</title>
+  <style>*, *::before, *::after { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 0 auto; padding: 48px 20px 80px; color: #1c1c1e; line-height: 1.8; background: #fff; }
+h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+h2 { font-size: 18px; font-weight: 600; margin-top: 40px; margin-bottom: 8px; }
+h3 { font-size: 15px; font-weight: 600; margin-top: 24px; margin-bottom: 4px; }
+p, li { font-size: 15px; color: #3a3a3c; }
+ul { padding-left: 20px; }
+li { margin-bottom: 4px; }
+a { color: #A0522D; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: none; border-top: 1px solid #e5e5ea; margin: 48px 0; }
+footer { margin-top: 64px; font-size: 13px; color: #8e8e93; }
+.brand { font-size: 13px; color: #8e8e93; margin-bottom: 2px; letter-spacing: 0.02em; text-transform: uppercase; }
+.date { font-size: 14px; color: #8e8e93; margin-top: 6px; }
+.back { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #A0522D; margin-bottom: 32px; }
+.contact-btn { display: inline-block; padding: 9px 16px; background: #f7efe8; border-radius: 10px; color: #A0522D; font-weight: 600; font-size: 15px; margin-top: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+th { text-align: left; padding: 8px 10px; background: #f2f2f7; font-weight: 600; color: #3a3a3c; border-bottom: 1px solid #e5e5ea; }
+td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertical-align: top; }
+.notice { background: #fff9e6; border-left: 3px solid #ffcc00; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #3a3a3c; }
+.notice-red { background: #fff2f2; border-left-color: #ff3b30; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.lang { font-size: 13px; }
+.lang a { color: #8e8e93; }
+.lang strong { color: #A0522D; }</style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="back" href="./cookienyan">← 냥냥보카 영어 지원 / 개인정보처리방침</a>
+    <span class="lang"><strong>한국어</strong> · <a href="./cookienyan-en">English</a></span>
+  </div>
+  <p class="brand">devplaynew · 냥냥보카</p>
+  <h1>냥냥보카 영어 (쿠키냥) — 계정 및 데이터 삭제</h1>
+  <p class="date">최종 개정일: 2026년 9월 6일</p>
+  <p>이 페이지는 냥냥보카 영어 – 쿠키냥 단어장(Android · com.pawblesse.cookienyan, iOS · 쿠키냥)의 계정과 데이터를 삭제하는 방법을 안내합니다. 개발자는 냥냥보카(devplaynew)입니다.</p>
+
+  <h2>방법 1 — 앱에서 바로 삭제 (권장)</h2>
+  <p>앱을 열 수 있다면 이 방법이 가장 빠르고, 즉시 처리됩니다.</p>
+  <ol>
+    <li>쿠키냥 앱을 실행합니다.</li>
+    <li>화면 아래 MY 탭을 누릅니다.</li>
+    <li>맨 아래로 스크롤해 계정 삭제를 누릅니다.</li>
+    <li>확인 창에서 삭제를 누릅니다.</li>
+  </ol>
+  <div class="notice notice-red">누르는 즉시 아래 ‘삭제되는 데이터’가 모두 삭제되며, 되돌릴 수 없습니다.</div>
+
+  <h2>방법 2 — 이메일로 요청</h2>
+  <p>앱을 이미 지웠거나 로그인할 수 없다면 아래로 요청해 주세요. 가입에 사용한 Apple 또는 Google 계정 이메일 주소를 함께 적어 주시면 확인이 빠릅니다.</p>
+  <a class="contact-btn" href="mailto:nyannyanvoca@icloud.com?subject=쿠키냥 계정 삭제 요청">✉︎ nyannyanvoca@icloud.com</a>
+  <p>영업일 기준 7일 이내에 처리하고 회신드립니다.</p>
+
+  <h2>삭제되는 데이터</h2>
+  <table>
+    <tr><th>데이터</th><th>보관 위치</th><th>처리</th></tr>
+    <tr><td>계정 식별자 · 표시 이름 · 이메일</td><td>인증 서버(Firebase Authentication)</td><td>즉시 삭제 (Apple 로그인 토큰도 폐기)</td></tr>
+    <tr><td>학습 기록(외운 단어, 정답·오답 기록, 복습 일정, 출석·연속 학습, 수집 카드)</td><td>기기</td><td>즉시 삭제</td></tr>
+    <tr><td>학습 기록 백업본</td><td>서버(Firebase Firestore)</td><td>즉시 삭제</td></tr>
+    <tr><td>닉네임 · 학습 레벨 · 알림 설정 등 앱 설정</td><td>기기</td><td>즉시 삭제</td></tr>
+  </table>
+
+  <h2>삭제되지 않고 남는 것</h2>
+  <table>
+    <tr><th>데이터</th><th>보관 주체</th><th>보관 기간</th></tr>
+    <tr><td>결제 · 환불 기록</td><td>Google Play (Android) / Apple App Store (iOS)</td><td>각 스토어와 관련 법령이 정한 기간. 개발자는 이 기록을 삭제할 수 없습니다</td></tr>
+    <tr><td>광고 재생 관련 정보</td><td>Google AdMob</td><td>Google 개인정보처리방침에 따름. 앱은 이 정보를 보관하지 않습니다</td></tr>
+    <tr><td>고객 문의 이메일</td><td>개발자 메일함</td><td>문의 처리 후 1년 이내 삭제</td></tr>
+  </table>
+  <div class="notice">구독은 계정 삭제로 해지되지 않습니다. Android는 Google Play 스토어 → 프로필 → 결제 및 정기 결제 → 정기 결제에서, iOS는 설정 → Apple 계정 → 구독에서 따로 해지해 주세요. 앱을 삭제해도 구독은 계속 청구됩니다.</div>
+
+  <footer>© 2026 devplaynew · <a href="mailto:nyannyanvoca@icloud.com">nyannyanvoca@icloud.com</a> · <a href="./">앱 목록으로</a></footer>
+</body>
+</html>
