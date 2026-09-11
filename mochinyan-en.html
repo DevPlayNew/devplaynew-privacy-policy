@@ -77,15 +77,18 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
     <li><strong>Nickname</strong> — if you enter one during onboarding, it is stored on your device.</li>
     <li><strong>Learning data</strong> — study progress, answer records, review schedules, and settings. Stored on your device and in your own iCloud (CloudKit private database). We operate no server of our own and cannot read this data.</li>
   </ul>
-  <p>Beyond this, the app collects no personally identifying information (name, email, phone number), and uses no third-party analytics or advertising SDKs.</p>
+  <p>Beyond this, the app collects no personally identifying information (name, email, phone number) and uses no third-party analytics SDKs. The only advertising SDK, Google AdMob, is used solely for rewarded ads a free user chooses to watch (see section 2).</p>
 
-  <h3>2. Apple services used</h3>
+  <h3>2. Services used</h3>
   <table>
     <tr><th>Service</th><th>Purpose</th></tr>
     <tr><td>Sign in with Apple</td><td>Sign-in (identity). Only the identifier and name are stored, on-device</td></tr>
     <tr><td>Apple CloudKit</td><td>Content delivery (public database, read-only) · learning data sync (private database)</td></tr>
     <tr><td>Apple App Store (StoreKit)</td><td>Subscription and lifetime-purchase processing. Payment details (cards, etc.) are handled solely by Apple; the app never collects them</td></tr>
+    <tr><td>Google AdMob</td><td>Shows one rewarded ad <b>only when a free user taps “Cheer”</b> to refill energy. No ads play on launch and there are no interstitials. We do not request app-tracking (IDFA) permission, so ads are non-personalized. Device information needed to serve ads (model, OS, IP, etc.) is processed under Google’s ad policies</td></tr>
   </table>
+
+  <p>Ads (Google AdMob) appear only for free users and only after tapping “Cheer for Mochinyan” (from September 2026). Premium users never see the button. Google’s handling of ad data follows <a href="https://policies.google.com/technologies/ads">Google’s advertising policies</a>.</p>
 
   <h3>3. Third parties</h3>
   <p>We do not sell or share stored information with third parties.</p>
