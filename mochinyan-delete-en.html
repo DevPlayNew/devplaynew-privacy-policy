@@ -38,7 +38,7 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
 
   <p class="brand">devplaynew · NyanNyanVoca</p>
   <h1>Mochinyan — Account &amp; Data Deletion</h1>
-  <p class="date">Last updated: September 1, 2026</p>
+  <p class="date">Last updated: September 14, 2026</p>
 
   <p>This page explains how to delete your account and data for <strong>Mochinyan Japanese – JLPT Words &amp; Kanji</strong> (Android · <code>com.pawblesse.mochinyan</code>, iOS · Mochinyan). The developer is <strong>NyanNyanVoca (devplaynew)</strong>.</p>
 
@@ -47,22 +47,23 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
   <ol>
     <li>Open the Mochinyan app.</li>
     <li>Tap the <strong>MY</strong> tab at the bottom.</li>
-    <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
-    <li>Confirm by tapping <strong>Delete</strong>.</li>
+    <li>Scroll to the bottom and tap <strong>Reset data</strong> (iOS) or <strong>Delete account</strong> (Android).</li>
+    <li>Confirm by tapping <strong>Reset</strong> or <strong>Delete</strong>.</li>
   </ol>
   <p>Everything listed under &ldquo;Data that is deleted&rdquo; is removed immediately. <strong>This cannot be undone.</strong></p>
 
   <h2>Option 2 — Request by email</h2>
-  <p>If you already uninstalled the app or cannot sign in, email us. Including the Google account address you signed up with helps us verify your request faster.</p>
+  <p>If you already uninstalled the app, email us. On Android, including the Google account address you signed up with helps us verify your request faster. On iOS there is no account and the developer cannot access your iCloud data; you can delete the Mochinyan data yourself in Settings → Apple Account → iCloud → Manage Storage.</p>
   <p><a class="contact-btn" href="mailto:nyannyanvoca@icloud.com?subject=[Mochinyan] Account and data deletion request">✉︎ nyannyanvoca@icloud.com</a></p>
   <p>We process requests and reply within <strong>7 business days</strong>.</p>
 
   <h2>Data that is deleted</h2>
   <table>
     <tr><th>Data</th><th>Stored in</th><th>Handling</th></tr>
-    <tr><td>Account identifier and display name</td><td>Device, authentication server</td><td>Deleted immediately</td></tr>
+    <tr><td>Account identifier and display name (Android)</td><td>Authentication server (Firebase Authentication)</td><td>Deleted immediately</td></tr>
     <tr><td>Learning records (learned words, answer history, review schedule, streaks)</td><td>Device</td><td>Deleted immediately</td></tr>
-    <tr><td>Learning record backup</td><td>Server (Firebase Firestore)</td><td>Deleted immediately</td></tr>
+    <tr><td>iCloud-synced copy of learning records (iOS)</td><td>Your own iCloud</td><td>Deleted immediately</td></tr>
+    <tr><td>Learning record backup (Android)</td><td>Server (Firebase Firestore)</td><td>Deleted immediately</td></tr>
     <tr><td>Nickname, level and notification settings</td><td>Device</td><td>Deleted immediately</td></tr>
   </table>
 
@@ -74,7 +75,7 @@ td { padding: 8px 10px; border-bottom: 1px solid #f2f2f7; color: #3a3a3c; vertic
   </table>
 
   <div class="notice notice-red">
-    <strong>Deleting your account does not cancel your subscription.</strong><br>
+    <strong>Resetting data or deleting your account does not cancel your subscription.</strong><br>
     On Android, cancel in <em>Google Play Store → profile → Payments &amp; subscriptions → Subscriptions</em>. On iOS, cancel in <em>Settings → Apple Account → Subscriptions</em>. Uninstalling the app does not stop billing.
   </div>
 
